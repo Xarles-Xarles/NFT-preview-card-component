@@ -1,0 +1,311 @@
+body{
+    background-color: var(--Very-dark-blue);
+    font-family: var(--font-family);
+    padding: 40px;
+}
+
+:root {      
+            /* Colors */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue : hsl(217, 54%, 11%); /*(main BG)*/
+    --Very-dark-blue2 : hsl(215, 48%, 9%); /*(card BG)*/
+    --Very-dark-blue3 : hsl(215, 32%, 27%); /*(line)*/
+    --White: hsl(0, 0%, 100%);
+
+    /* fonts */
+    --Font-size : 18px; /*(paragraph)*/
+    --font-family: 'Outfit', sans-serif;
+    --light-font: 300;
+    --bold-font: 400;
+    --bolder-font: 600;
+
+}
+
+.outer-div{
+    background-color: var(--Very-dark-blue2);
+    width: 28%;
+    margin: 0 auto;
+    padding: 9px;
+    border-radius: 18px;
+}
+
+.container{
+    background-color: var(--Very-dark-blue3);
+    margin: 18px;
+    padding: 30px;
+    border-radius: 18px;
+    
+}
+
+.eth-img-div{
+    text-align: center;
+}
+
+.eth-img-div > .img-div > img{
+    border-radius: 18px;
+    width:100%;
+    height: 330px;
+}
+
+.img-div{
+    background-color: var(--Cyan);
+    border-radius: 19px;
+    width:100%;
+    height: 330px;
+}
+.text-div p{
+    font-size: 22px;
+    font-family: var(--font-family);
+}
+
+.content h2{
+    color: var(--White);
+    font-size: 27px;
+}
+
+.content:hover h2{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.content p{
+    color: var(--Soft-blue);
+}
+
+.eth-duration-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth-img-div {
+    position: relative;
+  }
+
+
+.view-div {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+.view{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+.eth-img-div:hover .image {
+    opacity: 0.5;
+    cursor: pointer;
+    
+  }
+  
+.eth-img-div:hover .view {
+    opacity: 1;
+    cursor: pointer;
+}
+
+hr{
+    border: 0.1px solid var(--Soft-blue);
+}
+
+.eth p{
+    color: var(--Cyan);
+    font-weight: var(--bolder-font);
+    display: inline;
+}
+
+.eth{
+    cursor: pointer;
+}
+
+.eth{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.duration {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.creator-div{
+    display: flex;
+    gap: 10px;
+    color: var(--Soft-blue);
+    align-items: center;
+}
+ .creator-div b{
+    color: var(--White);
+ }
+.creator-div:hover b {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.creator-div img{
+   width: 40px;
+   height: 40px;
+   border: 1px solid var(--White);
+   border-radius: 50%;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding: 18px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (max-width:1285px) {
+    .outer-div{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:1085px) {
+    .outer-div{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:945px) {
+    .outer-div{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:855px) {
+    .outer-div{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:775px) {
+    .outer-div{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width:715px) {
+    .outer-div{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .outer-div{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:590px) {
+    .outer-div{
+        width: 80%;
+    }
+
+    body{
+        padding: 35px;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .outer-div{
+        width: 85%;
+    }
+
+    body{
+        padding: 30px;
+    }
+
+    .text-div p{
+        font-size: 19px;
+    }
+    
+    .content h2{
+        font-size: 24px;
+    }
+
+    .creator-div{
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:465px) {
+    .outer-div{
+        width: 90%;
+    }
+
+    body{
+        padding: 25px;
+    }
+
+    .text-div p{
+        font-size: 18px;
+    }
+    
+    .content h2{
+        font-size: 23px;
+    }
+
+    .creator-div{
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    .outer-div{
+        width: 98%;
+    }
+
+    body{
+        padding: 20px;
+    }
+    
+    .text-div p{
+        font-size: 17px;
+    }
+    
+    .content h2{
+        font-size: 22px;
+    }
+
+    .creator-div{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .outer-div{
+        width: 99%;
+    }
+
+    body{
+        padding: 15px;
+    }
+
+    .text-div p{
+        font-size: 15px;
+    }
+    
+    .content h2{
+        font-size: 20px;
+    }
+
+    .creator-div{
+        font-size: 15px;
+    }
+}
