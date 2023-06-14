@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Kumbh+Sans:wght@400;700&display=swap');
+
 body{
     background-color: var(--Very-dark-blue);
     font-family: var(--font-family);
-    padding: 40px;
+    padding: 100px;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 :root {      
@@ -13,27 +16,19 @@ body{
     --Very-dark-blue3 : hsl(215, 32%, 27%); /*(line)*/
     --White: hsl(0, 0%, 100%);
 
-    /* fonts */
-    --Font-size : 18px; /*(paragraph)*/
-    --font-family: 'Outfit', sans-serif;
-    --light-font: 300;
-    --bold-font: 400;
-    --bolder-font: 600;
-
 }
 
 .outer-div{
     background-color: var(--Very-dark-blue2);
-    width: 28%;
+    width: 30%;
     margin: 0 auto;
-    padding: 9px;
+    padding: 10px;
     border-radius: 18px;
 }
 
 .container{
     background-color: var(--Very-dark-blue3);
-    margin: 18px;
-    padding: 30px;
+    padding: 24px;
     border-radius: 18px;
     
 }
@@ -45,26 +40,26 @@ body{
 .eth-img-div > .img-div > img{
     border-radius: 18px;
     width:100%;
-    height: 330px;
+    height: 300px;
 }
 
 .img-div{
     background-color: var(--Cyan);
     border-radius: 19px;
     width:100%;
-    height: 330px;
+    height: 300px;
 }
 .text-div p{
-    font-size: 22px;
+    font-size: 20px;
     font-family: var(--font-family);
 }
 
-.content h2{
+h2{
     color: var(--White);
     font-size: 27px;
 }
 
-.content:hover h2{
+h2:hover{
     color: var(--Cyan);
     cursor: pointer;
 }
@@ -131,6 +126,7 @@ hr{
     align-items: center;
     gap: 5px;
 }
+
 .duration {
     display: flex;
     align-items: center;
@@ -143,10 +139,12 @@ hr{
     color: var(--Soft-blue);
     align-items: center;
 }
- .creator-div b{
+
+b{
     color: var(--White);
- }
-.creator-div:hover b {
+}
+
+b:hover{
     color: var(--Cyan);
     cursor: pointer;
 }
